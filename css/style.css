@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1abc9c;
+    --secondary-color: #2C3E50;
+    
+    --bg-footer-top: #3a546d;
+
+    --text-light: white;
+    --text-dark: #333333;
+
+    --star-color: #2c3e50;
+}
+
+#jumbotron, #about {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+footer {
+    background-color: var(--bg-footer-top);
+}
+header, #copyright {
+    background-color: var(--secondary-color);
+}
+
+#portfolio, #contact {
+    color: var(--text-dark);
+}
+header, footer, #copyright {
+    color: var(--text-light);
+}
