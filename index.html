@@ -15,133 +15,149 @@
 </head>
     
 <body>
-    <header>
-        <nav id="header-nav" class="container">
-            <div class="row justify-content-between">
-                <div class="col-6">
-                    <h1>mainTitle</h1>
-                </div>
-                <div class="col-3 align-self-center text-end fs-3"> <!-- hamburger menu -->
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div class="col d-none"> <!-- extended menu -->
-
+    <header class="bg_secondary fixed-top">
+        <nav id="header-nav" class="navbar navbar-expand-md container h-100">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold text-uppercase text-white" href="#">start bootstrap</a>
+                <button class="navbar-toggler border-light shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span id="bars" class="navbar-toggler-icon"></span>
+                </button>              
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+                        <a class="nav-link text-white" href="#about">About</a>
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </div>
                 </div>
             </div>
         </nav>
+
     </header>
 
     <main>
-        <section id="jumbotron">
+        <section id="jumbotron" class="bg_primary text-white py-5">
             <div class="container text-center">
-                <div>
-                    <img src="#" alt="jumbo-img">
+                <img class="mb-3" src="img/avatar.svg" alt="jumbo-img">
+                <h1 class="text-uppercase fw-bold mb-3">Start Bootstrap</h1>
+                <div class="py-3">
+                    <span class="star_bar ms_white"></span>
+                    <i class="star_icon white fs-4 fa-solid fa-star"></i>
+                    <span class="star_bar ms_white"></span>
                 </div>
-                <div>
-                    <h1>mainTitle</h1>
-                </div>
-                <div>
-                    lineWithStar
-                </div>
-                <p>
-                    texttexttext
-                </p>
+                <h5> GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR </h5>
             </div>
         </section>
 
-        <section id="portfolio">
+        <section id="portfolio" class="py-5">
             <div class="container text-center">
-                <h2>sectionTitle</h2>
-                    <div>
-                        lineWithStar
+                <h2 class="text_dark">Portfolio</h2>
+                <div class="py-3">
+                    <span class="star_bar ms_dark"></span>
+                    <i class="star_icon white fs-4 fa-solid fa-star"></i>
+                    <span class="star_bar ms_dark"></span>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                    <div class="col">
+                        <img class="img-fluid rounded-3" src="img/cabin.png" alt="portfolioImg1">
                     </div>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-                    <div class="col rounded">
-                        <img src="#" alt="portfolioImg1">
+                    <div class="col">
+                        <img class="img-fluid rounded-3" src="img/cake.png" alt="portfolioImg2">
                     </div>
-                    <div class="col rounded">
-                        <img src="#" alt="portfolioImg2">
+                    <div class="col">
+                        <img class="img-fluid rounded-3" src="img/circus.png" alt="portfolioImg3">
                     </div>
-                    <div class="col rounded">
-                        <img src="#" alt="portfolioImg3">
+                    <div class="col">
+                        <img class="img-fluid rounded-3" src="img/game.png" alt="portfolioImg4">
                     </div>
-                    <div class="col rounded">
-                        <img src="#" alt="portfolioImg4">
+                    <div class="col">
+                        <img class="img-fluid rounded-3" src="img/safe.png" alt="portfolioImg5">
                     </div>
-                    <div class="col rounded">
-                        <img src="#" alt="portfolioImg5">
-                    </div>
-                    <div class="col rounded">
-                        <img src="#" alt="portfolioImg6">
+                    <div class="col">
+                        <img class="img-fluid rounded-3" src="img/submarine.png" alt="portfolioImg6">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" class="bg_primary py-5 text-white">
             <div class="container text-center">
-                <h2>sectionTitle</h2>
-                <div>
-                    lineWithStar
+                <h2>About</h2>
+                <div class="py-3">
+                    <span class="star_bar ms_white"></span>
+                    <i class="star_icon white fs-4 fa-solid fa-star"></i>
+                    <span class="star_bar ms_white"></span>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center g-3 text-start py-3">
                     
-                    <div class="col-8 col-md-5">
-                        <p>text1</p>
+                    <div class="col-8 col-md-5 fs-5 fw-semibold">
+                        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
                     </div>
-                    <div class="col-8 col-md-5">
-                        <p>text2</p>
+                    <div class="col-8 col-md-5 fw-semibold fs-5">
+                        <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                     </div>
                 </div>
-                <a class="btn text-white" href="#">Download</a>
+                <button id="download-btn" type="button" class="btn btn-lg btn-outline-light"><i class="fa-solid fa-download"></i> Download</button>
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="py-5">
             <div class="container">
                 <div class="text-center">
-                    <h2>sectionTitle</h2>
-                <div>
-                    lineWithStar
-                </div>
+                    <h2 class="text_dark">Contact me</h2>
+                    <div class="py-3">
+                        <span class="star_bar ms_dark"></span>
+                        <i class="star_icon dark fs-4 fa-solid fa-star"></i>
+                        <span class="star_bar ms_dark"></span>
+                    </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-8">
-                        name
-                    </div>
-                    <div class="col-8">
-                        emailAddress
-                    </div>
-                    <div class="col-8">
-                        phoneNumber
-                    </div>
-                    <div class="col-8">
-                        Message
-                    </div>
-                    <div class="col-8">
-                        <button type="button">Submit</button>
+                        <form action="#">
+                            <div>
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div>
+                                <input type="tel" placeholder="Phone Number">
+                            </div>
+                            <div>
+                                <input type="text-area" placeholder="Testo">
+                            </div>
+                            
+                        </form>
                     </div>
                 </div>
             </div> 
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 text-center">
+    <footer class="text-white">
+        <div class="container py-5">
+            <div class="row row-cols-1 row-cols-md-3 text-center g-3">
                 <div class="col">
-                    location
+                    <h5>location</h5>
+                    <p class="fs-5">2215 John Daniel Drive Clark, MO 54243</p>
+                </div>
+                <div class="col mb-3">
+                    <h5>around the web</h5>
+                    <ul class="list-group list-group-horizontal list-unstyled justify-content-center">
+                        <li><a class="social_icon rounded-circle mt-1 mx-2" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="social_icon rounded-circle mt-1 mx-2" href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a class="social_icon rounded-circle mt-1 mx-2" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a class="social_icon rounded-circle mt-1 mx-2" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                    
                 </div>
                 <div class="col">
-                    aroundTheWeb
-                </div>
-                <div class="col">
-                    aboutFreelancer
+                    <h5>about freelancer</h5>
+                    <p class="fs-5">Freelance is a free to use, open source Bootstrap theme created by <span class="text_primary-color">Start Bootstrap</span> .</p>
                 </div>
             </div>
         </div>
-        <div id="copyright" class="text-center">
-            copyright
+        <div id="copyright" class="text-center bg_secondary py-5">
+            <p class="fs-6 mb-0">Copyright &copy; Your Website 2019</p>
         </div>
     </footer>
 

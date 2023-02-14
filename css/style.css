@@ -1,33 +1,88 @@
 
 :root {
-
+    /* font */
     font-family: 'Open Sans', sans-serif;
 
-    --primary-color: #1abc9c;
-    --secondary-color: #2C3E50;
+    /* color palette */
+    --primary_color: #1abc9c;
+    --secondary_color: #2C3E50;
     
-    --bg-footer-top: #3a546d;
+    --bg_footer: #3a546d;
 
-    --text-light: white;
-    --text-dark: #333333;
+    --text_dark: #333333;
 
-    --star-color: #2c3e50;
+    --star_color: #2c3e50;
 }
-
-#jumbotron, #about {
-    background-color: var(--primary-color);
-    color: var(--text-light);
+/* background rules */
+.bg_primary {
+    background-color: var(--primary_color);
+}
+.bg_secondary {
+    background-color: var(--secondary_color);
 }
 footer {
-    background-color: var(--bg-footer-top);
+    background-color: var(--bg_footer);
 }
-header, #copyright {
-    background-color: var(--secondary-color);
+/* text rules */
+.text_dark {
+    color: var(--text_dark);
+}
+.text_primary-color {
+    color: var(--primary_color);
+}
+header {
+    min-height: 70px;
+}
+main {
+    margin-top: 70px;
 }
 
-#portfolio, #contact {
-    color: var(--text-dark);
+h2,h4,h5 {
+    text-transform: uppercase;
 }
-header, footer, #copyright {
-    color: var(--text-light);
+h2 {
+    font-weight: 600;
 }
+
+#jumbotron img {
+    max-width: 230px;
+}
+
+#bars{
+    filter: invert() opacity(0.8);
+}
+
+#download-btn:hover {
+    color: var(--primary_color);
+}
+
+/* star with bars */
+.star_icon {
+    margin: 0 5px;
+    vertical-align: middle;
+}
+.star_bar::after {
+    display: inline-block;
+    content: '';
+    width: 100px;
+    height: 4px;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+.ms_white.star_bar::after {
+    background-color: white;
+}
+.ms_dark.star_bar::after {
+    background-color: var(--secondary_color);
+}
+
+.social_icon {
+    font-size: 1.2rem;
+    display: inline-block;
+    line-height: 48px;
+    color: white;
+    border: solid 1px white;
+    width: 50px;
+    height: 50px;
+}
+
