@@ -52,8 +52,12 @@ h2 {
     filter: invert() opacity(0.8);
 }
 
-#download-btn:hover {
+.btn_green {
+    background-color: var(--primary_color);
+}
+.btn_green:hover {
     color: var(--primary_color);
+    border: solid var(--primary_color) 1px;
 }
 
 /* star with bars */
@@ -86,9 +90,9 @@ h2 {
     height: 50px;
 }
 
-::placeholder {
-    color: rgba (0,0,0,1)
-    font-weight: 600;
+#contact ::placeholder {
+    color: rgba(0,0,0,1);
+    font-size: 1.2rem;
 }
 footer ul {
     list-style: none;
