@@ -86,3 +86,10 @@ h2 {
     height: 50px;
 }
 
+::placeholder {
+    color: rgba (0,0,0,1)
+    font-weight: 600;
+}
+footer ul {
+    list-style: none;
+}
